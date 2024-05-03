@@ -1,15 +1,18 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "app/*"
-      ]
+      "@assets/*": ["assets/*"],
+      "@screens/*": ["src/screens/*"],
+      "@constants/*": ["src/constants/*"],
+      "@component/*": ["src/component/*"],
+      "@ApiHelper/*": ["src/ApiHelper/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@store/*": ["src/store/*"],
+      "@utils/*": ["src/utils/*"],
+      "@theme/*": ["src/theme/*"],
+      "@type/*": ["src/types/*"]
     }
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  }
 }
